@@ -13,6 +13,7 @@ dependencies = [
   "lxml[html-clean]>=6.0.2",
   "nomad-simulations>=0.3.2",
   "nomad-parser-plugins-database>=1.0",
+  "dummy-nomad-plugin",
 ]
 # 'nomad-porous-materials; sys_platform != "win32"',
 # "perovskite-solar-cell-database",
@@ -23,16 +24,21 @@ dependencies = [
 #"nomad-normalizer-plugin-spectra>=1.0",
 #"nomad-parser-plugins-electronic>=1.0",
 #"nomad-parser-plugins-atomistic>=1.0.6",
+#[optional-dependencies]
+#plugins = ["dummy_nomad_plugin"]
+#cpu-action = ["dummy_nomad_plugin[cpu-action]"]
 
 [tool.uv.workspace]
 members = ["packages/*"]
 
 [tool.uv.sources]
 nomad-lab = { workspace = true }
+dummy-nomad-plugin = { workspace = true }
 nomad-external-eln-integrations = { git = "https://github.com/FAIRmat-NFDI/nomad-external-eln-integrations", rev = "de8050effb510fc2be0974cb08d44b475791b0a5" }
 #nomad-aitoolkit = { git = "https://github.com/FAIRmat-NFDI/nomad-aitoolkit.git", rev = "b203f8eb28dc4b6771a39d5c5b7ad3d9d8583ac8" }
 #nomad-porous-materials = { git = "https://github.com/FAIRmat-NFDI/nomad-porous-materials.git", rev = "522f4a3208077f534f1c5e886527ee2104283d0b" }
 #perovskite-solar-cell-database = { git = "https://github.com/FAIRmat-NFDI/nomad-perovskite-solar-cells-database.git", tag = "v0.1.1" }
+
 
 [tool.uv]
 extra-index-url = [
