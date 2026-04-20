@@ -4,3 +4,9 @@
 [submodule "packages/dummy-nomad-plugin"]
 	path = packages/dummy-nomad-plugin
 	url = https://github.com/judasaca/dummy-nomad-plugin.git
+[submodule "packages/nomad-gui"]
+	path = packages/nomad-gui
+	url = git@gitlab.mpcdf.mpg.de:nomad-lab/nomad-gui.git
+[submodule "packages/nomad-parser-plugins-electronic"]
+	path = packages/nomad-parser-plugins-electronic
+	url = https://github.com/nomad-coe/electronic-parsers.git
